@@ -62,8 +62,35 @@
                             data-450p="opacity: 1;"
                         >
 							<h1>Prizes and sponsers</h1>
-                        </div>
-                    </div>
+                        <style>
+						#map {
+					width: 100%;
+					height: 400px;
+								background-color: grey;
+      }
+    </style>
+    <div id="map"></div>
+<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+			    
+			    
+			    </div>
+                    
+			 </div>
                     
                     <div id="section-5" class="section">
                         <div class="content"
@@ -79,6 +106,7 @@
                             data-550p="opacity: 0;"
                             data-600p="opacity: 1;"
                         >
+				
                         <div id="events">
 			<h1>Made By Electrophile inc.</h1>
 		<img src="logo.png" alt="electrophileinc" style="width:304px;height:228px;">
